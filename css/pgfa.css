@@ -1,0 +1,116 @@
+/*!
+ * RAIS custom styles
+ */
+
+/* body text color */
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.72222;
+  color: #4d4e53;
+  background-color: #fff;
+  }
+  
+/* link text color */
+a {
+  color: #5dade2;
+  text-decoration: none;
+  -webkit-transition: .25s;
+          transition: .25s;
+  }
+
+/* link selected color */
+a:hover,
+a:focus {
+  color: #3498db;
+  text-decoration: none;
+  }
+
+/* Button color */
+.btn-primary {
+  color: #fff;
+  background-color: #4d4e53;
+  }
+ 
+ /* Button hover color */
+.btn-primary:hover,
+.btn-primary.hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #ef4035;
+  border-color: #ef4035;
+  }
+
+
+/* Button active color? */
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: #fff;
+ background-color: #ef4035;
+  border-color: #ef4035;
+}
+
+.has-error .control-label, {
+  color: #a94442;
+  }
+
+/* navbar main color */
+.navbar-inverse {
+  background-color: #b31b1b;
+  }
+
+/* navbar hover color */
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #f1c40f;
+  background-color: transparent;
+  }
+  
+/* navbar selected color */
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #ef4035;
+  }
+
+/* navbar logo hover color */
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #f1c40f;
+  background-color: transparent;
+  }
+  
+ /* navbar radius */
+ .navbar {
+  min-height: 53px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 0px;
+  }
+
+p {
+  font-size: 14px;
+  }
+
+/* panel glyphs */
+.panel-heading a:after {
+    font-family:'Glyphicons Halflings';
+    content:"\e114";
+    float: right;
+    color: grey;
+}
+.panel-heading a.collapsed:after {
+    content:"\e080";
+}

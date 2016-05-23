@@ -94,7 +94,7 @@ a:focus {
  /* navbar radius */
  .navbar {
   min-height: 53px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   font-size: 16px;
   border: none;
   border-radius: 0px;

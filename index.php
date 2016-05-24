@@ -10,7 +10,7 @@ $page = 'dashboard';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Loading Bootstrap -->
-    <link href="css/vendor/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Loading Flat UI -->
     <link href="css/flat-ui.css" rel="stylesheet">
@@ -36,7 +36,6 @@ $page = 'dashboard';
 
     <div id="wrapper">
 
-        <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
@@ -61,9 +60,7 @@ $page = 'dashboard';
                 </li>
             </ul>
         </div>
-        <!-- /#sidebar-wrapper -->
         
-        <!-- Page Content -->
         <div id="page-content-wrapper">
 
             <div class="container-fluid"> 
@@ -92,7 +89,9 @@ $page = 'dashboard';
                                     <td>Ithaca</td>
                                     <td>Testing</td>
                                     <td>
-                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modal-example">Email</button>
+                                        <button type="button" class="btn btn-default btn-sm show-detail-button">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        </button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -103,7 +102,9 @@ $page = 'dashboard';
                                     <td></td>
                                     <td></td>
                                     <td>
-                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modal-example">Email</button>
+                                        <button type="button" class="btn btn-default btn-sm show-detail-button">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        </button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -114,7 +115,9 @@ $page = 'dashboard';
                                     <td></td>
                                     <td></td>
                                     <td>
-                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modal-example">Email</button>
+                                        <button type="button" class="btn btn-default btn-sm show-detail-button">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        </button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -125,7 +128,9 @@ $page = 'dashboard';
                                     <td></td>
                                     <td></td>
                                     <td>
-                                        <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#modal-example">Email</button>
+                                        <button type="button" class="btn btn-default btn-sm show-detail-button">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                        </button>
                                     </td>
                                 </tr>                     
                             </tbody>
@@ -188,8 +193,9 @@ $page = 'dashboard';
             </div>
             <!-- /.container -->
 
-        </div>
         <!-- /#page-content-wrapper -->
+        </div>
+
 
     </div>
     <!-- /#wrapper -->

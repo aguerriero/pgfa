@@ -8,10 +8,11 @@
         </a>
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-5">
-        <!--
-        <ul class="nav navbar-nav">
-            <li <?php if ($page == 'dashboard') { echo 'class="active"'; } ?>><a href="index.php">Dashboard</a></li>
-        </ul>
-        -->
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div><!-- /.navbar-collapse -->
 </nav>

@@ -32,39 +32,16 @@ $page = 'dashboard';
 <body>
 
     <!-- APPLICATION HEADER -->
-    <?php include('includes/application-header.php') ?>  
+    <?php include('includes/application-header.php') ?>    
 
     <div id="wrapper">
 
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        PGFA v3
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Dashboard</a>
-                </li>
-                <li>
-                    <a href="#">Requests</a>
-                </li>
-                <li>
-                    <a href="#">Administration</a>
-                </li>
-                <li>
-                    <a href="#">Reports</a>
-                </li>
-                <li>
-                    <a href="#">Help</a>
-                </li>
-            </ul>
-        </div>
+        <?php include('includes/sidebar.php') ?>  
         
         <div id="page-content-wrapper">
 
             <div class="container-fluid"> 
-                <h4>Requests</h4>
+                <h3>Requests</h3>
           
                 <div class="row">
                     <div class="col-md-12">

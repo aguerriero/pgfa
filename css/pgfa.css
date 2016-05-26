@@ -4,6 +4,7 @@
 
 /* body text color */
 body {
+  padding-top: 50px;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.72222;

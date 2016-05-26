@@ -10,7 +10,7 @@
         <li <?php if ($page == 'requests-create') { echo 'class="active"'; } ?>><a href="requests-create.php">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Create Request</a>
         </li>
-        <li <?php if ($page == 'my-requests') { echo 'class="active"'; } ?>><a href="my request.php">
+        <li <?php if ($page == 'my-requests') { echo 'class="active"'; } ?>><a href="my-requests.php">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> My Requests</a>
         </li>
         <li <?php if ($page == 'administration') { echo 'class="active"'; } ?>><a href="administration.php">Administration</a></li>

@@ -9,7 +9,7 @@
 
           <div class="row sidebar-content-title">
 
-              Transaction Details: 54883000
+              Request Details: 003736
 
           </div>
 
@@ -23,33 +23,33 @@
 <p class="detail-value">13381932</p>
 
 <!---->
-  <p class="detail-key">Purchased Items:</p>
+  <p class="detail-key">Some Details in a Table:</p>
 
         <table class="table">
           <thead>
             <tr>
-              <th class="col-md-1">Item</th>
-              <th class="col-md-1 text-right">Qty</th>
-              <th class="col-md-1 text-right">Unit Price</th>
-              <th class="col-md-1 text-right">Line Total</th>
-              <th class="col-md-1 text-right">This Account</th>
+              <th class="col-md-1">#</th>
+              <th class="col-md-1 text-right">#</th>
+              <th class="col-md-1 text-right">#</th>
+              <th class="col-md-1 text-right">#</th>
+              <th class="col-md-1 text-right">#</th>
             </tr>
           </thead>
 
           <tbody>
               <tr>
-                <td>EMD Millipore EmbryoMaxRTM M2 Medium (1X),  Liquid,  with ()(Additional S&amp;amp;H or Hazmat Fees May App</td>
-                <td class="text-right">1.0</td>
-                <td class="text-right">$34.22</td>
-                <td class="text-right">$34.22</td>
-                <td class="text-right">$17.11</td>
+                <td>#</td>
+                <td class="text-right">#</td>
+                <td class="text-right">#</td>
+                <td class="text-right">#</td>
+                <td class="text-right">#</td>
               </tr>
               <tr>
-                <td>Shipping</td>
-                <td class="text-right"><!----></td>
-                <td class="text-right">$47.00</td>
-                <td class="text-right">$47.00</td>
-                <td class="text-right">$23.50</td>
+                <td>#</td>
+                <td class="text-right">#</td>
+                <td class="text-right">#</td>
+                <td class="text-right">#</td>
+                <td class="text-right">#</td>
               </tr>
           </tbody>
 
@@ -58,8 +58,8 @@
               <td>&nbsp;</td>
               <td>&nbsp;</td>
               <td>&nbsp;</td>
-              <td class="text-right"><strong>$81.22</strong></td>
-              <td class="text-right"><strong>$40.61</strong></td>
+              <td class="text-right"><strong>$</strong></td>
+              <td class="text-right"><strong>$</strong></td>
             </tr>
           </tfoot>
         </table>

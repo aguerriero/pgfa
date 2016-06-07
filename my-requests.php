@@ -36,7 +36,7 @@ $page = 'my-requests';
 
     <div id="wrapper">
 
-        <?php include('includes/sidebar.php') ?>  
+        <?php include('includes/nav-sidebar.php') ?>  
         
         <div id="page-content-wrapper">
 

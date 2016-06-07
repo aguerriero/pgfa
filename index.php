@@ -17,7 +17,8 @@ $page = 'dashboard';
 
     <!-- Loading custom styles -->
     <link href="css/pgfa.css" rel="stylesheet">
-
+    <link href="css/front-end.css" rel="stylesheet">
+    <link href="css/slide-push-menu.css" rel="stylesheet">
     <!-- Loading sidebar -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
 
@@ -36,9 +37,9 @@ $page = 'dashboard';
 
     <div id="wrapper">
 
-        <?php include('includes/sidebar.php') ?>  
+        <?php include('includes/nav-sidebar.php') ?>  
         
-        <div id="page-content-wrapper">
+        <div id="page-content-wrapper o-wrapper" class="o-wrapper">
 
             <div class="container-fluid"> 
                 <h4>Requests</h4>
@@ -58,7 +59,7 @@ $page = 'dashboard';
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
+                                <tr class="c-button">
                                     <th scope="row"><a href="#">003736</a></th>
                                     <td>Pending</td>
                                     <td>Processed</td>
@@ -66,56 +67,17 @@ $page = 'dashboard';
                                     <td>Ithaca</td>
                                     <td>Testing</td>
                                     <td>
-                                        <button type="button" class="btn btn-default btn-sm show-detail-button">
+                                        <button type="button" id="c-button--slide-right" class="btn btn-default btn-sm c-button">
                                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                         </button>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">003735</a></th>
-                                    <td>Approved</td>
-                                    <td>Processed</td>
-                                    <td>Andrew Guerriero (ag725)</td>
-                                    <td>Ithaca</td>
-                                    <td>Testing</td>
-                                    <td>
-                                        <button type="button" class="btn btn-default btn-sm show-detail-button">
-                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">003734</a></th>
-                                    <td>Pending</td>
-                                    <td>Processed</td>
-                                    <td>Andrew Guerriero (ag725)</td>
-                                    <td>Ithaca</td>
-                                    <td>Testing</td>
-                                    <td>
-                                        <button type="button" class="btn btn-default btn-sm show-detail-button">
-                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row"><a href="#">003733</a></th>
-                                    <td>Approved</td>
-                                    <td>Processed</td>
-                                    <td>Andrew Guerriero (ag725)</td>
-                                    <td>Ithaca</td>
-                                    <td>Testing</td>
-                                    <td>
-                                        <button type="button" class="btn btn-default btn-sm show-detail-button">
-                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                        </button>
-                                    </td>
-                                </tr>                     
+                                </tr>  
                             </tbody>
                         </table>
 
                         <div class="panel panel-default">
                             <div class="panel-body">
-                                <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                                <a href="#nav-menu-toggle" class="btn btn-default" id="nav-menu-toggle">Toggle Menu</a>
                             </div>
                         </div>
 
@@ -128,8 +90,9 @@ $page = 'dashboard';
         <!-- /#page-content-wrapper -->
         </div>
 
-
-    </div>
+    <?php include('includes/details-sidebar.php') ?>
+    <div id="c-mask" class="c-mask"></div>
+</div>
     <!-- /#wrapper -->
 
     <!-- MODAL INCLUDES -->
@@ -143,14 +106,30 @@ $page = 'dashboard';
     <script src="js/vendor/respond.min.js"></script>
     <script src="js/flat-ui.min.js"></script>
     <script src="js/radiocheck.js"></script>
+    <script src="js/vendor/menu.js"></script>
 
     <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
+     <script>
+        $("#nav-menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+      /**
+       * Slide right instantiation and action.
+       */
+      var slideRight = new Menu({
+        wrapper: '#wrapper',
+        type: 'slide-right',
+        menuOpenerClass: '.c-button',
+        maskId: '#c-mask'
+      });
 
+      var slideRightBtn = document.querySelector('#c-button--slide-right');
+      
+      slideRightBtn.addEventListener('click', function(e) {
+        e.preventDefault;
+        slideRight.open();
+      });
+    </script>
 </body>
 </html>

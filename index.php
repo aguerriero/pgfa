@@ -67,7 +67,7 @@ $page = 'dashboard';
                                     <td>Ithaca</td>
                                     <td>Testing</td>
                                     <td>
-                                        <button type="button" id="c-button--slide-right" class="btn btn-default btn-sm c-button">
+                                        <button type="button" id="c-button--push-right" class="btn btn-default btn-sm c-button">
                                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                         </button>
                                     </td>
@@ -117,18 +117,18 @@ $page = 'dashboard';
       /**
        * Slide right instantiation and action.
        */
-      var slideRight = new Menu({
+      var pushRight = new Menu({
         wrapper: '#wrapper',
-        type: 'slide-right',
+        type: 'push-right',
         menuOpenerClass: '.c-button',
         maskId: '#c-mask'
       });
 
-      var slideRightBtn = document.querySelector('#c-button--slide-right');
+      var pushRightBtn = document.querySelector('#c-button--push-right');
       
-      slideRightBtn.addEventListener('click', function(e) {
+      pushRightBtn.addEventListener('click', function(e) {
         e.preventDefault;
-        slideRight.open();
+        pushRight.open();
       });
     </script>
 </body>

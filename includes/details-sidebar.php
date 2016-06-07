@@ -1,9 +1,9 @@
-<nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
-        <div class="col-md-4 sidebar col-sm-3 fullHeight" style="display: block; height: 762px;">
+<nav id="c-menu--push-right" class="c-menu c-menu--push-right">
+        <div class="col-md-4 sidebar col-sm-3 fullHeight" style="display: block; height: 900px;">
     <div class="sticky sidebar-inner col-md-3 col-sm-3" id="detailDiv" style="position: fixed; top: 70px;">
 
         <div class="push-right" style="margin-right:20px;margin-top:-5px;">
-            <button type="button" class="close sidebar-close-button c-menu__close" aria-label="Close" data-ember-action="808"><span aria-hidden="true">×</span></button>
+            <button type="button" class="close sidebar-close-button c-menu__close" aria-label="Close" data-ember-action="808"><span aria-hidden="true">X</span></button>
         </div>
 
 

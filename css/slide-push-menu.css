@@ -125,8 +125,8 @@ body.has-active-menu {
 .c-menu--push-left .c-menu__close,
 .c-menu--push-right .c-menu__close {
   display: block;
-  padding: 12px 24px;
-  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .c-menu--slide-left,
 .c-menu--push-left {

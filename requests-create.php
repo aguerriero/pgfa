@@ -50,17 +50,15 @@ $page = 'requests-create';
                 <div class="row">
                     <div class="col-md-12">
 
-                        <div class="well">
-                            <form>
-                                <div class="form-group">
-                                    <label for="requestor">Requestor</label>                                          
-                                    <input type="text" class="form-control" id="requestor" placeholder="Guerriero, Andrew (ag725)"> 
-                                </div>
-                                <div class="form-group">
-                                    <label for="projectleaders">Project Leader</label>
-                                    <input type="text" class="form-control" id="projectleader" placeholder="Guerriero, Andrew (ag725)">
-                                </div>
-                            </form>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label for="requestor">Requestor</label>
+                                <input class="form-control" type="text" id="requestor" placeholder="Guerriero, Andrew (ag725)"/>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label for="projectleaders">Project Leader</label>
+                                <input class="form-control" type="text" id="projectleader" placeholder="Guerriero, Andrew (ag725)"/>
+                            </div>
                         </div>
 
                         <div><a href="#">Expand all | Collapse all</a></div>
@@ -96,21 +94,19 @@ $page = 'requests-create';
                                             <label for="description">Brief Project Description (500-character maximum)</label>                                          
                                             <textarea rows="2" class="form-control" id="description"> </textarea>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="startdate">Project Start Date</label>                                          
-                                            <div class="input-group date" data-provide="datepicker">
-                                                <input type="text" class="form-control">
-                                            <div class="input-group-addon">
-                                                <span class="glyphicon glyphicon-th"></span>
-                                            </div>
+                                        <div class="form-group"> 
+                                        <label>Project Start Date</label>
+                                            <div class="input-group"> 
+                                            <input class="form-control" type="text" placeholder="mm/dd/yyyy"> 
+                                            <div class="input-group-btn"><button type="button" class="btn btn-default">
+                                            <span class="glyphicon glyphicon-th"></span></button></div> </div> 
                                         </div>
-                                        <div class="form-group">
-                                            <label for="startdate">Project End Date</label>                                          
-                                            <div class="input-group date" data-provide="datepicker">
-                                                <input type="text" class="form-control">
-                                            <div class="input-group-addon">
-                                                <span class="glyphicon glyphicon-th"></span>
-                                            </div>
+                                        <div class="form-group"> 
+                                        <label>Project End Date</label>
+                                            <div class="input-group"> 
+                                            <input class="form-control" type="text" placeholder="mm/dd/yyyy"> 
+                                            <div class="input-group-btn"><button type="button" class="btn btn-default">
+                                            <span class="glyphicon glyphicon-th"></span></button></div> </div> 
                                         </div>
                                         <div class="form-group">
                                             <label for="comments">Comments</label>                                          
@@ -179,10 +175,6 @@ $page = 'requests-create';
     <script src="js/vendor/respond.min.js"></script>
     <script src="js/flat-ui.min.js"></script>
     <script src="js/radiocheck.js"></script>
-
-    <script>
-    $('.datepicker').datepicker();
-    </script>
 
     <!-- Menu Toggle Script -->
     <script>

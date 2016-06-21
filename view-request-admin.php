@@ -1,5 +1,5 @@
 <?php
-$page = 'requests-create';
+$page = 'view-request-admin';
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +23,9 @@ $page = 'requests-create';
 
     <link rel="shortcut icon" href="img/favicon.ico">
 
+    <script>
+    $('.datepicker').datepicker();
+    </script>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
@@ -42,7 +45,7 @@ $page = 'requests-create';
         <div id="page-content-wrapper">
 
             <div class="container-fluid"> 
-                <h4>Create a Request</h4>
+                <h4>View Request: 003736</h4>
           
                 <div class="row">
                     <div class="col-md-12">
@@ -109,7 +112,6 @@ $page = 'requests-create';
                                             <label for="comments">Comments</label>                                          
                                             <textarea rows="2" class="form-control" id="comments"> </textarea>
                                         </div>
-                                        <button type="button" class="btn btn-primary">Next <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
                                     </form>
 
                                 </div>
@@ -153,7 +155,6 @@ $page = 'requests-create';
                                             <label for="comments">Comments</label>                                          
                                             <textarea rows="2" class="form-control" id="comments"> </textarea>
                                         </div>
-                                        <button type="button" class="btn btn-primary">Next <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
                                     </form>
                                 </div>
                             </div>
@@ -168,21 +169,31 @@ $page = 'requests-create';
                             <div class="collapse" id="contactinformation">
                                 <div class="panel-body">
                                 <form>
-                                        <div class="form-group">
-                                            <label for="projecttitle">Project Title</label>
-                                            <select class="form-control">
-                                                <option>Last Used Project Title</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="description">Brief Project Description (500-character maximum)</label>                                          
-                                            <textarea rows="1" class="form-control" id="description"> </textarea>
-                                        </div>
-                                        
-                                        <button type="button" class="btn btn-primary">Add Contact</button>
-                                    </form>
+                                    <div class="form-group">
+                                        <label for="projecttitle">Project Title</label>
+                                        <select class="form-control">
+                                            <option>Last Used Project Title</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description">Brief Project Description (500-character maximum)</label>                                          
+                                        <textarea rows="1" class="form-control" id="description"> </textarea>
+                                    </div>
+                                    <button type="button" class="btn btn-primary">Add Contact</button>
+                                </form>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                Occupancies
+                                </h3>
+                            </div>
+                                <div class="panel-body">
+                                <br><br><br><br><br><br>
+                                </div>
                         </div>
 
                     </div>
@@ -190,7 +201,9 @@ $page = 'requests-create';
 
                 <div class="row">
                     <div class="col-md-12">
-                        <button type="button" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-primary">Save</button>
+                        <button type="button" class="btn btn-default">Cancel</button>
+                        <button type="button" class="btn btn-default">Map...</button>
                     </div>
                 </div>
 

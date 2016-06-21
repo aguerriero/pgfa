@@ -14,7 +14,7 @@
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> My Requests</a>
         </li>
         <li <?php if ($page == 'administration') { echo 'class="active"'; } ?>><a href="administration.php">Administration</a></li>
-        <li <?php if ($page == 'requests-admin') { echo 'class="active"'; } ?>><a href="requests-admin.php">
+        <li <?php if ($page == 'view-request-admin') { echo 'class="active"'; } ?>><a href="view-request-admin.php">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Requests</a>
         </li>
         <li <?php if ($page == 'facilities') { echo 'class="active"'; } ?>><a href="facilities.php">

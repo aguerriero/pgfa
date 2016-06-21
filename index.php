@@ -17,8 +17,7 @@ $page = 'dashboard';
 
     <!-- Loading custom styles -->
     <link href="css/pgfa.css" rel="stylesheet">
-    <link href="css/front-end.css" rel="stylesheet">
-    <link href="css/slide-push-menu.css" rel="stylesheet">
+
     <!-- Loading sidebar -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
 
@@ -60,7 +59,7 @@ $page = 'dashboard';
                             </thead>
                             <tbody>
                                 <tr class="c-button">
-                                    <th scope="row"><a href="#">003736</a></th>
+                                    <th scope="row"><a href="view-request-user.php">003736</a></th>
                                     <td>Pending</td>
                                     <td>Processed</td>
                                     <td>Andrew Guerriero (ag725)</td>
@@ -90,9 +89,7 @@ $page = 'dashboard';
         <!-- /#page-content-wrapper -->
         </div>
 
-    <?php include('includes/details-sidebar.php') ?>
-    <div id="c-mask" class="c-mask"></div>
-</div>
+    </div>
     <!-- /#wrapper -->
 
     <!-- MODAL INCLUDES -->

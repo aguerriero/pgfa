@@ -38,7 +38,7 @@ $page = 'dashboard';
 
         <?php include('includes/nav-sidebar.php') ?>  
         
-        <div id="page-content-wrapper o-wrapper" class="o-wrapper">
+        <div id="page-content-wrapper">
 
             <div class="container-fluid"> 
                 <h4>Requests</h4>
@@ -114,19 +114,11 @@ $page = 'dashboard';
       /**
        * Slide right instantiation and action.
        */
-      var pushRight = new Menu({
-        wrapper: '#wrapper',
-        type: 'push-right',
-        menuOpenerClass: '.c-button',
-        maskId: '#c-mask'
-      });
-
-      var pushRightBtn = document.querySelector('#c-button--push-right');
-      
-      pushRightBtn.addEventListener('click', function(e) {
-        e.preventDefault;
-        pushRight.open();
-      });
+        $(document).ready(function() {
+          $('[data-toggle=offcanvas]').click(function() {
+            $('.row-offcanvas').toggleClass('active');
+          });
+        });
     </script>
 </body>
 </html>

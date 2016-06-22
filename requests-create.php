@@ -124,37 +124,7 @@ $page = 'requests-create';
                             </div>
                             <div class="collapse" id="facilityinformation">
                                 <div class="panel-body">
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="projecttitle">Project Title</label>
-                                            <select class="form-control">
-                                                <option>Last Used Project Title</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="description">Brief Project Description (500-character maximum)</label>                                          
-                                            <textarea rows="1" class="form-control" id="description"> </textarea>
-                                        </div>
-                                        <div class="form-group"> 
-                                        <label>Project Start Date</label>
-                                            <div class="input-group"> 
-                                            <input class="form-control" type="text" placeholder="mm/dd/yyyy"> 
-                                            <div class="input-group-btn"><button type="button" class="btn btn-default">
-                                            <span class="glyphicon glyphicon-th"></span></button></div> </div> 
-                                        </div>
-                                        <div class="form-group"> 
-                                        <label>Project End Date</label>
-                                            <div class="input-group"> 
-                                            <input class="form-control" type="text" placeholder="mm/dd/yyyy"> 
-                                            <div class="input-group-btn"><button type="button" class="btn btn-default">
-                                            <span class="glyphicon glyphicon-th"></span></button></div> </div> 
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="comments">Comments</label>                                          
-                                            <textarea rows="2" class="form-control" id="comments"> </textarea>
-                                        </div>
-                                        <button type="button" class="btn btn-primary">Next <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
-                                    </form>
+                                    Panel Form
                                 </div>
                             </div>
                         </div>
@@ -167,20 +137,7 @@ $page = 'requests-create';
                             </div>
                             <div class="collapse" id="contactinformation">
                                 <div class="panel-body">
-                                <form>
-                                        <div class="form-group">
-                                            <label for="projecttitle">Project Title</label>
-                                            <select class="form-control">
-                                                <option>Last Used Project Title</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="description">Brief Project Description (500-character maximum)</label>                                          
-                                            <textarea rows="1" class="form-control" id="description"> </textarea>
-                                        </div>
-                                        
-                                        <button type="button" class="btn btn-primary">Add Contact</button>
-                                    </form>
+                                    Panel Form
                                 </div>
                             </div>
                         </div>
